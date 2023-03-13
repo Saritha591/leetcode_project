@@ -1,6 +1,10 @@
 import pytest
-from playwright.sync_api import Playwright
+from playwright.sync_api import Playwright,sync_playwright
 
-@pytest.fixture(scope="session")
-def browser(launch_browser: Callable[[], Browser]) -> Generator[Browser, None, None]:
-     browser = launch_browser()
+
+@pytest.fixture
+def page():
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=False)
+        page = browser.new_page()
+        yield page
