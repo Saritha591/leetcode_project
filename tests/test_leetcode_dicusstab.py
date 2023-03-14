@@ -12,12 +12,12 @@ password = config.password
 
 def test_leetcodediscuss(page):
     goto = Leetcodegotopage(page)
-    login = Leetcodeloginpage()
-    explore_page = Leetcodeexplorepage()
-    begginer_page = Leetcodebegginerpage()
-    problem_page = Leetcodeproblempage()
-    contest_page = Leetcodeweeklypage()
-    discuss_page = Leetcodediscusspage()
+    login = Leetcodeloginpage(page)
+    explore_page = Leetcodeexplorepage(page)
+    begginer_page = Leetcodebegginerpage(page)
+    problem_page = Leetcodeproblempage(page)
+    contest_page = Leetcodeweeklypage(page)
+    discuss_page = Leetcodediscusspage(page)
     goto.leetcodepage()
     login.login_credentials(username, password)
     explore_page.explorepage()

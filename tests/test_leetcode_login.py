@@ -8,6 +8,6 @@ password = config.password
 
 def test_login_leetcode(page):
     goto = Leetcodegotopage(page)
-    Login = Leetcodeloginpage()
+    Login = Leetcodeloginpage(page)
     goto.leetcodepage()
     Login.login_credentials(username, password)
