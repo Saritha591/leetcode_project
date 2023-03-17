@@ -1,5 +1,4 @@
 from playwright.sync_api import Page
-from data import config
 
 
 class Leetcodegotopage:
