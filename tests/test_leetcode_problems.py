@@ -11,6 +11,7 @@ password = config.password
 
 
 class TestLeetcodeproblempage:
+    
     def test_leetcodeproblemtab(self, page: Page):
         goto = Leetcodegotopage(page)
         login = Leetcodeloginpage(page)

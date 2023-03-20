@@ -9,6 +9,7 @@ username = config.username
 password = config.password
 
 class TestBegginerguide:
+    
     def test_begginerpage(self, page: Page):
         goto = Leetcodegotopage(page)
         login = Leetcodeloginpage(page)
