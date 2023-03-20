@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<freeStyleBuild>
+ <action>
+ <parameter>
+ <name>LOWER_ENV</name>
+ <value>dev</value>
+ </parameter>
+ </action>
+ <action>
+ <cause>
+ <shortDescription>Started by timer</shortDescription>
+ </cause>
+ </action>
+ <building>false</building>
+ <duration>61886</duration>
+ <fullDisplayName>MyJob #580</fullDisplayName>
+ <id>2014-04-01_10-01-50</id>
+ <keepLog>false</keepLog>
+ <number>580</number>
+ <result>SUCCESS</result>
+ <timestamp>1396342910088</timestamp>
+ <url>http://jenkinsserver:8080/view/MyView/job/MyJob/580/</url>
+ <builtOn/>
+ <changeSet/>
+</freeStyleBuild>
